@@ -3,7 +3,8 @@ import pandas as pd
 import pickle
 
 # Load data
-data = pd.read_csv(r"C:\\Users\\hariv\\OneDrive\\Desktop\\Data Science\\Python\\Resale\\Singapore_resale.csv")
+url = "https://drive.google.com/file/d/1q23v1hSSHEA6wOj8Dhs-IRke6doVeICh/view?usp=sharing"
+data = pd.read_csv(url)
 
 # Create dictionary to get the encoded values
 town_dict = dict(zip(data['town'].unique(), data['town_code'].unique()))
