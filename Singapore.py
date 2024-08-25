@@ -4,7 +4,7 @@ import pickle
 
 # Load data
 url = "https://drive.google.com/file/d/1q23v1hSSHEA6wOj8Dhs-IRke6doVeICh/view?usp=sharing"
-data = pd.read_csv(url)
+data = pd.read_csv(url,encoding='utf-8')
 
 # Create dictionary to get the encoded values
 town_dict = dict(zip(data['town'].unique(), data['town_code'].unique()))
